@@ -6,10 +6,8 @@ You have directories containing data files and specification files. The specific
 
 ## Detailed problem definition
 
-Drops of data files and specification files need to be loaded these files into 
+Drops of data files and specification files need to be loaded and merged to push data into 
 a database.
-
-## Problem specifications
 
 Data files will be dropped in the folder "data/" relative to your application
 and specification files will be dropped in the folder "specs/" relative to
