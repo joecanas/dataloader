@@ -1,0 +1,20 @@
+2018-08-09 09:45 No data files to process
+
+2018-08-09 09:46 Begin processing data files
+
+Processing spec file: specs/test_UTF8.csv
+No spec file found: specs/test_UTF8.csv
+Moving unprocessed data files for review:
+ - data/hold/test_UTF8_2018-01-04.txt
+
+Processing spec file: specs/testformat1.csv
+No spec file found: specs/testformat1.csv
+Moving unprocessed data files for review:
+ - data/hold/testformat1_2015-06-28.txt
+
+2018-08-09 09:46 Exiting
+
+2018-08-09 09:46 No data files to process
+
+2018-08-09 09:48 No data files to process
+

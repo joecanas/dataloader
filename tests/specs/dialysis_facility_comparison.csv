@@ -1,0 +1,20 @@
+"column name",width,datatype
+provider_number,9,INTEGER
+network,4,INTEGER
+facility_name,91,TEXT
+five_star,2,INTEGER
+five_star_data_availability_code,5,INTEGER
+address_line_1,78,TEXT
+city,26,TEXT
+state,4,TEXT
+zip,5,TEXT
+county,20,TEXT
+phone_number,14,TEXT
+profit_nonprofit,10,TEXT
+chain_owned,1,BOOLEAN
+chain_organization,40,TEXT
+late_shift,1,BOOLEAN
+dialysis_stations,2,INTEGER
+incenter_hemodialysis,1,BOOLEAN
+incenter_peritoneal_dialysis,1,BOOLEAN
+home_hemodialysis_training,1,BOOLEAN

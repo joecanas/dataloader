@@ -1,0 +1,53 @@
+DATALOADER: PROPOSED TEST PLAN
+
+Class TestDataloader(unittest.TestCase)
+
+Setup:
+- Create test database
+- Create test table: testformat2 schema
+- Copy necessary data file and specs file from tests sub-directory to /data and /specs directories
+
+Teardown:
+- Drop test database
+
+
+Initial tests:
+
+- No data files:
+        Prep:  Verify data files directory is empty
+        Expected:  data files directory is empty, no database tables created, return message
+
+- Valid specs and data files:
+
+  Variations: 
+
+    - One data file eligible for processing (one fileformat)
+        Expected:  create table, insert data in db, data files moved to 'processed' directory, return message
+
+    - Two data files eligible for processing (all the same fileformat)
+        Expected:  create table, insert data in db, data files moved to 'processed' directory, return message
+
+    - Three data files eligible for processing (each with different fileformat)
+        Expected:  create table, insert data in db, data files moved to 'processed' directory, return message
+
+    - Valid specs file and valid data file containing UTF-8
+        Expected:  data in db matches data file content, data file moved to 'processed' directory, return message
+
+    - Table with name matching fileformat does not exist in database
+        Test against clean database install with valid spec and data files, return message
+        Expected:  create table, insert data in db, data files moved to 'processed' directory, return message
+
+    - Table with name matching fileformat exists in database
+        Expected:  correct data inserted into table, data files moved to 'processed' directory, return message
+
+    - Larger values: data set (~500 rows), data row length (~200 characters), spec file (~20 data columns) 
+        Expected:  correct data inserted into table, data files moved to 'processed' directory, return message
+
+- Valid specs file and invalid data file: Data file row length does not match specs total calculated width
+        Expected:  data file moved to 'hold' directory, return message
+
+- Valid data file but no matching specs file
+        Expected:  data file moved to 'hold' directory, return message
+
+- Valid data file and invalid specs file: Incorrect headers
+        Expected:  data file moved to holding directory, return message

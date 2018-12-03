@@ -1,0 +1,4 @@
+"column name",width,datatype
+utf_name,30,TEXT
+name,15,TEXT
+is_utf,1,BOOLEAN

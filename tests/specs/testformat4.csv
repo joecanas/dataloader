@@ -1,0 +1,18 @@
+"column name",width,datatype
+first_name,10,TEXT
+last_name,20,TEXT
+mailing_address_1,30,TEXT
+mailing_address_2,30,TEXT
+mailing_city,30,TEXT
+mailing_state,2,TEXT
+mailing_zip_code,10,TEXT
+billing_address_1,30,TEXT
+billing_address_2,30,TEXT
+billing_city,30,TEXT
+billing_state,2,TEXT
+billing_zip,10,TEXT
+phone_1,15,TEXT
+phone_1_type,2,INTEGER
+phone_2,15,TEXT
+phone_2_type,2,INTEGER
+billing_equals_mailing,1,BOOLEAN

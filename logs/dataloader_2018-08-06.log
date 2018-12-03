@@ -1,0 +1,10 @@
+2018-08-06 23:43 Begin processing data files
+
+Processing spec file: specs/test_UTF8.csv
+Table created: test_UTF8
+Data entered into test_UTF8
+Moving successfully processed data files:
+ - data/processed/test_UTF8_2018-01-04.txt
+
+2018-08-06 23:43 Exiting
+
